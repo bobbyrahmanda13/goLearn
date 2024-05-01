@@ -41,8 +41,14 @@ import "fmt"
 // code yang dibuat akan lebih bagus dan mudah dibaca
 
 func main() {
+  name := "Rahman Visalux"
+  fmt.Println(name)
+
+  name = "Rahman Gaming"
+  fmt.Println(name)
+
 	var (
-		firstName = "Rahman"
+	firstName = "Rahman"
 		lastName  = "Visalux"
 	)
 	fmt.Println(firstName)
