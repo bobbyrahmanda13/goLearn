@@ -9,4 +9,5 @@ func main(){
   fmt.Println(name)
 
   name = "Rahman Ganteng"
+  fmt.Println(name)
 }
