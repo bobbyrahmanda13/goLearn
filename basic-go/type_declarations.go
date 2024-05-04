@@ -13,7 +13,12 @@ func main() {
 
   var ktpRahman NoKTP = "223123123"
 
+  var contoh string = "33333333"
+  var contohKtp NoKTP = NoKTP(contoh)
+
 	fmt.Println(ktpRahman)
-	fmt.Println(NoKTP("444444444"))
+	// fmt.Println(NoKTP("444444444"))
+  // fmt.Println(contohKtp)
+  fmt.Println(NoKTP(contohKtp))
 
 }
