@@ -30,4 +30,17 @@ func main() {
 	fmt.Println(nilai32)
 	fmt.Println(nilai64)
 	fmt.Println(nilai16)
+
+
+ // kode program konversi tipe data (2)
+  var (
+    name = "Rahman Visalux"
+    e uint8 = name[0] // name[0] => [0] adalah index length name yang selalu dimulai dari angka 0
+    eString = string(e)
+  )
+
+    fmt.Println(name)
+    fmt.Println(e)
+    fmt.Println(eString)
+
 }
