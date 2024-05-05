@@ -38,12 +38,25 @@ func main() {
     tsbagi=sbagi1%sbagi2
 	)
 
+a += 10
+d -= 10
+
+kali1 *= 10
+bagi1 /= 10
+  sbagi1 %= 10
+
+	fmt.Println(a)
+	fmt.Println(d)
+	fmt.Println(kali1)
+	fmt.Println(bagi1)
+	fmt.Println(sbagi1)
+fmt.Println("--------------------")
+
 	fmt.Println(c)
 	fmt.Println(f)
 	fmt.Println(tkali)
 	fmt.Println(tbagi)
 	fmt.Println(tsbagi)
-
 
   // augmented assigment
   // operasi matematika => augmented assigment
