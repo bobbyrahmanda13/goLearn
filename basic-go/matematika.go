@@ -43,4 +43,14 @@ func main() {
 	fmt.Println(tkali)
 	fmt.Println(tbagi)
 	fmt.Println(tsbagi)
+
+
+  // augmented assigment
+  // operasi matematika => augmented assigment
+
+  // a = a + 10 => a += 10
+  // a = a - 10 => a -= 10
+  // a = a * 10 => a *= 10
+  // a = a / 10 => a /= 10
+  // a = a % 10 => a %= 10
 }
