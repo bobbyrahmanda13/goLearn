@@ -32,25 +32,25 @@ func main() {
 		bagi2 = 5
 		tbagi = bagi1 / bagi2
 
-    // sisa pembagian
-    sbagi1=50
-    sbagi2=24
-    tsbagi=sbagi1%sbagi2
+		// sisa pembagian
+		sbagi1 = 50
+		sbagi2 = 24
+		tsbagi = sbagi1 % sbagi2
 	)
 
-a += 10
-d -= 10
+	a += 10 // a = a + 10
+	d -= 10 // d = d - 10
 
-kali1 *= 10
-bagi1 /= 10
-  sbagi1 %= 10
+	kali1 *= 10 // kali1 = kali1 * 10
+	bagi1 /= 10 // bagi1 = bagi1 / 10
+	sbagi1 %= 10 // sbagi1 = sbagi1 % 10
 
 	fmt.Println(a)
 	fmt.Println(d)
 	fmt.Println(kali1)
 	fmt.Println(bagi1)
 	fmt.Println(sbagi1)
-fmt.Println("--------------------")
+	fmt.Println("--------------------")
 
 	fmt.Println(c)
 	fmt.Println(f)
@@ -58,12 +58,13 @@ fmt.Println("--------------------")
 	fmt.Println(tbagi)
 	fmt.Println(tsbagi)
 
-  // augmented assigment
-  // operasi matematika => augmented assigment
+	// augmented assigment
+	// operasi matematika => augmented assigment
 
-  // a = a + 10 => a += 10
-  // a = a - 10 => a -= 10
-  // a = a * 10 => a *= 10
-  // a = a / 10 => a /= 10
-  // a = a % 10 => a %= 10
+	// a = a + 10 => a += 10
+	// a = a - 10 => a -= 10
+	// a = a * 10 => a *= 10
+	// a = a / 10 => a /= 10
+	// a = a % 10 => a %= 10
+
 }
