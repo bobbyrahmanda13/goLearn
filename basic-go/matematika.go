@@ -67,19 +67,28 @@ func main() {
 	// a = a / 10 => a /= 10
 	// a = a % 10 => a %= 10
 
-// Unary Operator
-// operator = keterangan
-//   ++ => a = a + 1
-//   -- => a = a - 1
-//   - => Negative
-//   + => Positive 
-//   ! => Boolean Kebalikan
+	// Unary Operator
+	// operator = keterangan
+	//   ++ => a = a + 1
+	//   -- => a = a - 1
+	//   - => Negative
+	//   + => Positive
+	//   ! => Boolean Kebalikan
 
-  // Kode Program Unary Operator
-  fmt.Println("-----------------------")
-  var j = 1
-    j++
-  j++
+	// Kode Program Unary Operator
+	fmt.Println("-----------------------")
 
+	var j = 1
+	fmt.Println(j)
+
+	j++ // j = j +1
+	fmt.Println(j)
+
+	j++ // j = j +1
+	fmt.Println(j)
+  fmt.Println("----------------------")
+
+  j--
   fmt.Println(j)
+
 }
