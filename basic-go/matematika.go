@@ -41,8 +41,8 @@ func main() {
 	a += 10 // a = a + 10
 	d -= 10 // d = d - 10
 
-	kali1 *= 10 // kali1 = kali1 * 10
-	bagi1 /= 10 // bagi1 = bagi1 / 10
+	kali1 *= 10  // kali1 = kali1 * 10
+	bagi1 /= 10  // bagi1 = bagi1 / 10
 	sbagi1 %= 10 // sbagi1 = sbagi1 % 10
 
 	fmt.Println(a)
@@ -67,4 +67,19 @@ func main() {
 	// a = a / 10 => a /= 10
 	// a = a % 10 => a %= 10
 
+// Unary Operator
+// operator = keterangan
+//   ++ => a = a + 1
+//   -- => a = a - 1
+//   - => Negative
+//   + => Positive 
+//   ! => Boolean Kebalikan
+
+  // Kode Program Unary Operator
+  fmt.Println("-----------------------")
+  var j = 1
+    j++
+  j++
+
+  fmt.Println(j)
 }
