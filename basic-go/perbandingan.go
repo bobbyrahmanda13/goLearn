@@ -42,12 +42,11 @@ func main(){
     result3 bool = name3 != name4
     result4 bool = name3 != name5
   )
+
   fmt.Println(result) // true
   fmt.Println(result2) // false
   fmt.Println(result3) // true
   fmt.Println(result4) // false
-
-
 
 }
 
