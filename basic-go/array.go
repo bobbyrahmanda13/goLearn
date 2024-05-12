@@ -41,4 +41,7 @@ func main() {
 	fmt.Println(values[2])
 	fmt.Println(values)
 
+  // Function Array
+
+
 }
