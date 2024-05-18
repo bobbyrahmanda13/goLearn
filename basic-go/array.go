@@ -42,6 +42,12 @@ func main() {
 	fmt.Println(values)
 
   // Function Array
+  // Operasi | Keterangan
+  // len(array) | Untuk mendapatkan panjang Array 
+  // array[index] | Mendapatkan data di posisi index
+  // array[index] = value | mengubah data di posisi index
+
+
 
 
 }
