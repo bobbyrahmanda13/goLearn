@@ -71,35 +71,50 @@ func main() {
 	fmt.Println(slice1[0])
 	fmt.Println(slice1[1])
 
-  slice2 := names[:3]
+	slice2 := names[:3]
 	fmt.Println(slice2)
 
-  var slice3 []string = names[3:]
-  fmt.Println(slice3)
+	var slice3 []string = names[3:]
+	fmt.Println(slice3)
 
-  //! note: jika sudah punya array lalu jika ingin membuat slice dari array yang sudah ada
-  // maka bentuk slice nya akan seperti ini:
+	//! note: jika sudah punya array lalu jika ingin membuat slice dari array yang sudah ada
+	// maka bentuk slice nya akan seperti ini:
 
-  // slice4 := names[:]
-  // fmt.Println(slice4)
+	// slice4 := names[:]
+	// fmt.Println(slice4)
 
-  // jika menggunakan deklarasi manual menggunakan var
-  // cara manual
-  var slice4 []string = names[:]
-  fmt.Println("ini slice4", slice4)
+	// jika menggunakan deklarasi manual menggunakan var
+	// cara manual
+	var slice4 []string = names[:]
+	fmt.Println("ini slice4", slice4)
 
-  //! ket : jika menggunakan cara manual maka untuk slice itu tidak perlu menentukan jumlah data
-  // seperti jika di array => [3]string, jika di slice => []string, jadi tidak dibutuhkan untuk menentukan jumlah data array nya
+	//! ket : jika menggunakan cara manual maka untuk slice itu tidak perlu menentukan jumlah data
+	// seperti jika di array => [3]string, jika di slice => []string, jadi tidak dibutuhkan untuk menentukan jumlah data array nya
 
+	// # Function Slice
 
-  // # Function Slice
+	// Operasi | Keterangan
+	// len(slice) | Untuk mendapakan panjang
+	// cap(slice) | Untuk mendapatkan kapasitas
+	// append(slice,data) | Membuat slice baru dengan menambah data ke posisi terakhir slice, jika kapasitas sudah penuh, maka akan membuat array baru
+	// make([]TypeData, length, capcity) | Membuat slice baru
+	// copy(destination, source) | menyalin slice dari source ke destination
 
-  // Operasi | Keterangan
-  // len(slice) | Untuk mendapakan panjang
-  // cap(slice) | Untuk mendapatkan kapasitas
-  // append(slice,data) | Membuat slice baru dengan menambah data ke posisi terakhir slice, jika kapasitas sudah penuh, maka akan membuat array baru
-  // make([]TypeData, length, capcity) | Membuat slice baru
-  // copy(destination, source) | menyalin slice dari source ke destination
+	// # Kode Program Append Slice
+  fmt.Println("----------------------")
+
+	days := [...]string{"Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"}
+	daySlice1 := days[5:]
+	daySlice1[0] = "Sabtu Baru"
+	daySlice1[1] = "Minggu Baru"
+	fmt.Println(days) // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
+
+  daySlice2:=append(daySlice1,"Libur Baru")
+
+  fmt.Println(daySlice2) // [Sabtu Baru, Minggu Baru, Libur Baru]
+  daySlice2[0]= "Ups"
+  fmt.Println(daySlice2) // [Ups, Minggu Baru, Libur Baru]
+  fmt.Println(days) // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
 
 
 }
