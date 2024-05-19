@@ -74,8 +74,11 @@ func main() {
   slice2 := names[:3]
 	fmt.Println(slice2)
 
-  slice3 := names[3:]
+  var slice3 []string = names[3:]
   fmt.Println(slice3)
+
+  //! note: jika sudah punya array lalu jika ingin membuat slice dari array yang sudah ada
+  // maka bentuk slice nya akan seperti ini:
 
   // slice4 := names[:]
   // fmt.Println(slice4)
@@ -87,5 +90,6 @@ func main() {
 
   //! ket : jika menggunakan cara manual maka untuk slice itu tidak perlu menentukan jumlah data
   // seperti jika di array => [3]string, jika di slice => []string, jadi tidak dibutuhkan untuk menentukan jumlah data array nya
+
 
 }
