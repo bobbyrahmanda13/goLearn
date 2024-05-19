@@ -92,4 +92,12 @@ func main() {
   // seperti jika di array => [3]string, jika di slice => []string, jadi tidak dibutuhkan untuk menentukan jumlah data array nya
 
 
+  // # Function Slice
+
+  // Operasi | Keterangan
+  // len(slice) | Untuk mendapakan panjang
+  // cap(slice) | Untuk mendapatkan kapasitas
+  // append(slice,data) | Membuat slice baru dengan menambah data ke posisi terakhir slice, jika kapasitas sudah penuh, maka akan membuat array baru
+  // make([]TypeData, length, capcity) | Membuat slice baru
+  // copy(destination, source) | menyalin slice dari source ke destination
 }
