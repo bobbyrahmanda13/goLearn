@@ -65,8 +65,27 @@ import "fmt"
 
 func main() {
 	names := [...]string{"Rahman", "Visalux", "Gaming", "Riko", "Risma", "Jancok"}
-	slice := names[4:6]
+	slice1 := names[4:6]
 
-	fmt.Println(slice[0])
-	fmt.Println(slice[1])
+	fmt.Println(slice1)
+	fmt.Println(slice1[0])
+	fmt.Println(slice1[1])
+
+  slice2 := names[:3]
+	fmt.Println(slice2)
+
+  slice3 := names[3:]
+  fmt.Println(slice3)
+
+  // slice4 := names[:]
+  // fmt.Println(slice4)
+
+  // jika menggunakan deklarasi manual menggunakan var
+  // cara manual
+  var slice4 []string = names[:]
+  fmt.Println("ini slice4", slice4)
+
+  //! ket : jika menggunakan cara manual maka untuk slice itu tidak perlu menentukan jumlah data
+  // seperti jika di array => [3]string, jika di slice => []string, jadi tidak dibutuhkan untuk menentukan jumlah data array nya
+
 }
