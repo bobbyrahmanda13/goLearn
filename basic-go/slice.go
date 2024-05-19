@@ -5,14 +5,13 @@
 // slice mirip dengan Array, yg membedakan adalah ukuran slice bisa berubah
 // slice dan array selalu terkoneksi, dimana slice adalah data yg mengakses sebagian atau seluruh data di array
 
-// kalau data array sudah di tentukan misalnya data array nya adalah 5 ya, itu jadi 5 berbeda dengan slice yang data nya bisa bertambah secara dinamis 
+// kalau data array sudah di tentukan misalnya data array nya adalah 5 ya, itu jadi 5 berbeda dengan slice yang data nya bisa bertambah secara dinamis
 
 // * Detail tipe data slice
 // - tipe data slice memiliki 3 data, yaitu pointer, length, dan capacity
 // - pointer adalah penunjuk data pertama di array pada slice
 // - length adalah panjang dari slice,
 // - capacity adalah kapasitas dari slice, dimana length tidak boleh lebih dari capacity
-
 
 // * Membuat Slice dari Array
 
@@ -48,7 +47,7 @@
 // -- length = 3 => panjang data dimulai dari data pertama, karena sebelum high maka dari data 4 5 6 = 3 total length nya jadi dari 4 - 7 itu jarrak nya 3
 // -- capacity = 8 => total semua kapasitas dari array nya dimulai dari index ke 4 data pertama(pointer)
 //
-// contoh lainnya 
+// contoh lainnya
 //
 // array[6:9]
 //
@@ -58,3 +57,16 @@
 // -- capacity = 6 => karena dari data pertama yaitu index ke 6 hingga ke index data terakhir, karena array nya berisi sampai index ke 11 maka dari 6 ke 11 itu adalah 6 7 8 9 10 11
 //
 
+// # Kode Program Slice
+
+package main
+
+import "fmt"
+
+func main() {
+	names := [...]string{"Rahman", "Visalux", "Gaming", "Riko", "Risma", "Jancok"}
+	slice := names[4:6]
+
+	fmt.Println(slice[0])
+	fmt.Println(slice[1])
+}
