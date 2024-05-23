@@ -115,12 +115,22 @@ func main() {
 	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
 
 	daySlice2 := append(daySlice1, "Libur Baru")
+  daySlice2[1] = "Minggu lama"
 	fmt.Println(daySlice1) // Sabtu Baru, Minggu Baru
-	fmt.Println(daySlice2) // [Sabtu Baru, Minggu Baru, Libur Baru]
+	fmt.Println(daySlice2) // [Sabtu Baru, Minggu lama, Libur Baru]
 	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat Sabtu Baru, Minggu Baru]
 
 	daySlice2[0] = "Ups"
 	fmt.Println(daySlice2) // [Ups, Minggu Baru, Libur Baru]
 	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
+
+  // # Kode Program Make slice
+  newSlice := make([]string, 2, 5)
+  newSlice[0] = "Juancok"
+  newSlice[1] = "Juancok"
+
+  fmt.Println(newSlice)
+  fmt.Println(len(newSlice))
+  fmt.Println(cap(newSlice))
 
 }
