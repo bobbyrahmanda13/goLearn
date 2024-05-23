@@ -1,11 +1,11 @@
 // # Type data Slice
-// type data ini adalah tipe data yang sangat sering digunakan di golang
+// type data ini adalah tipe data yg sangat sering digunakan di golang
 
 // type data slice adalah potongan dari data array
 // slice mirip dengan Array, yg membedakan adalah ukuran slice bisa berubah
 // slice dan array selalu terkoneksi, dimana slice adalah data yg mengakses sebagian atau seluruh data di array
 
-// kalau data array sudah di tentukan misalnya data array nya adalah 5 ya, itu jadi 5 berbeda dengan slice yang data nya bisa bertambah secara dinamis
+// kalau data array sudah di tentukan misalnya data array nya adalah 5 ya, itu jadi 5 berbeda dengan slice yg data nya bisa bertambah secara dinamis
 
 // * Detail tipe data slice
 // - tipe data slice memiliki 3 data, yaitu pointer, length, dan capacity
@@ -77,7 +77,7 @@ func main() {
 	var slice3 []string = names[3:]
 	fmt.Println(slice3)
 
-	//! note: jika sudah punya array lalu jika ingin membuat slice dari array yang sudah ada
+	//! note: jika sudah punya array lalu jika ingin membuat slice dari array yg sudah ada
 	// maka bentuk slice nya akan seperti ini:
 
 	// slice4 := names[:]
@@ -124,10 +124,15 @@ func main() {
 	fmt.Println(daySlice2) // [Ups, Minggu Baru, Libur Baru]
 	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
 
+  fmt.Println("-----------------batas---------------------")
+
   // # Kode Program Make slice
-  newSlice := make([]string, 2, 5)
+  var newSlice []string = make([]string, 3, 5) // ini sama dgn yg dibawah
+  // newSlice := make([]string, 2, 5) // ini sama dgn yg diatas
+
   newSlice[0] = "Juancok"
   newSlice[1] = "Juancok"
+  newSlice[2] = "Juancok"
 
   fmt.Println(newSlice)
   fmt.Println(len(newSlice))
