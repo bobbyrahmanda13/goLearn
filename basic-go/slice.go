@@ -116,5 +116,4 @@ func main() {
   fmt.Println(daySlice2) // [Ups, Minggu Baru, Libur Baru]
   fmt.Println(days) // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
 
-
 }
