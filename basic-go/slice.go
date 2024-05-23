@@ -101,23 +101,26 @@ func main() {
 	// copy(destination, source) | menyalin slice dari source ke destination
 
 	// # Kode Program Append Slice
-  fmt.Println("----------------------")
+	fmt.Println("----------------------")
 
 	days := [...]string{"Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"}
 
 	daySlice1 := days[5:]
-fmt.Println(daySlice1) // Sabtu, Minggu
+	fmt.Println(daySlice1) // Sabtu, Minggu
 
 	daySlice1[0] = "Sabtu Baru"
 	daySlice1[1] = "Minggu Baru"
 
-	fmt.Println(days) // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
+	fmt.Println(daySlice1) // Sabtu Baru, Minggu Baru
+	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
 
-  daySlice2:=append(daySlice1,"Libur Baru")
-  fmt.Println(daySlice2) // [Sabtu Baru, Minggu Baru, Libur Baru]
+	daySlice2 := append(daySlice1, "Libur Baru")
+	fmt.Println(daySlice1) // Sabtu Baru, Minggu Baru
+	fmt.Println(daySlice2) // [Sabtu Baru, Minggu Baru, Libur Baru]
+	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat Sabtu Baru, Minggu Baru]
 
-  daySlice2[0]= "Ups"
-  fmt.Println(daySlice2) // [Ups, Minggu Baru, Libur Baru]
-  fmt.Println(days) // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
+	daySlice2[0] = "Ups"
+	fmt.Println(daySlice2) // [Ups, Minggu Baru, Libur Baru]
+	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
 
 }
