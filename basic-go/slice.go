@@ -126,16 +126,37 @@ func main() {
 
   fmt.Println("-----------------batas---------------------")
 
-  // # Kode Program Make slice
-  var newSlice []string = make([]string, 3, 5) // ini sama dgn yg dibawah
+  // # Kode Program Make slice => ini cara untuk membuat slice lansung
+
+  var newSlice []string = make([]string, 2, 5) // ini sama dgn yg dibawah
   // newSlice := make([]string, 2, 5) // ini sama dgn yg diatas
 
   newSlice[0] = "Juancok"
   newSlice[1] = "Juancok"
-  newSlice[2] = "Juancok"
+  // newSlice[2] = "Juancok" // error, harusnya menggunakan append
 
   fmt.Println(newSlice)
   fmt.Println(len(newSlice)) // length dari slice
   fmt.Println(cap(newSlice)) // kapasitas dari slice
+
+
+  newSlice2 := append(newSlice, "Riko")
+  fmt.Println(newSlice2)
+  fmt.Println(len(newSlice2)) // length dari slice
+  fmt.Println(cap(newSlice2)) // kapasitas dari slice
+
+  newSlice2[0] = "Lontong"
+  fmt.Println(newSlice2)
+  fmt.Println(newSlice)
+
+fmt.Println("-------------------batas------------------")
+
+  // # Kode Program Copy Slice
+  fromSlice := days[:]
+  toSlice := make([]string, len(fromSlice), cap(fromSlice))
+
+  copy(toSlice, fromSlice)
+
+  fmt.Println(toSlice)
 
 }
