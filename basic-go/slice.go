@@ -101,7 +101,7 @@ func main() {
 	// copy(destination, source) | menyalin slice dari source ke destination
 
 	// # Kode Program Append Slice
-	fmt.Println("----------------------")
+	fmt.Println("---------------------batas---------------------")
 
 	days := [...]string{"Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"}
 
@@ -152,7 +152,9 @@ func main() {
 fmt.Println("-------------------batas------------------")
 
   // # Kode Program Copy Slice
-  fromSlice := days[:]
+  fromSlice := days[:] // ambil semua data array dari days
+
+  // buat slice lalu ambil length nya dari array days dan capacity juga
   toSlice := make([]string, len(fromSlice), cap(fromSlice))
 
   copy(toSlice, fromSlice)
