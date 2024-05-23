@@ -135,7 +135,7 @@ func main() {
   newSlice[2] = "Juancok"
 
   fmt.Println(newSlice)
-  fmt.Println(len(newSlice))
-  fmt.Println(cap(newSlice))
+  fmt.Println(len(newSlice)) // length dari slice
+  fmt.Println(cap(newSlice)) // kapasitas dari slice
 
 }
