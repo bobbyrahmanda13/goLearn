@@ -115,7 +115,7 @@ func main() {
 	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
 
 	daySlice2 := append(daySlice1, "Libur Baru")
-  daySlice2[1] = "Minggu lama"
+	daySlice2[1] = "Minggu lama"
 	fmt.Println(daySlice1) // Sabtu Baru, Minggu Baru
 	fmt.Println(daySlice2) // [Sabtu Baru, Minggu lama, Libur Baru]
 	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat Sabtu Baru, Minggu Baru]
@@ -124,41 +124,57 @@ func main() {
 	fmt.Println(daySlice2) // [Ups, Minggu Baru, Libur Baru]
 	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
 
-  fmt.Println("-----------------batas---------------------")
+	fmt.Println("-----------------batas---------------------")
 
-  // # Kode Program Make slice => ini cara untuk membuat slice lansung
+  // !note => jika array masih memiliki kapasitas yang cukup maka masih bisa menggunakan array yang sama
+  // jadi tidak buang2 array 
+  // jangan sampai setiap kita bikin append kita bikin array baru, append kita bikin array baru, karena itu akan membuat aplikasi kita akan menjadi sangat lambat
 
-  var newSlice []string = make([]string, 2, 5) // ini sama dgn yg dibawah
-  // newSlice := make([]string, 2, 5) // ini sama dgn yg diatas
+	// # Kode Program Make slice => ini cara untuk membuat slice lansung
 
-  newSlice[0] = "Juancok"
-  newSlice[1] = "Juancok"
-  // newSlice[2] = "Juancok" // error, harusnya menggunakan append
+	var newSlice []string = make([]string, 2, 5) // ini sama dgn yg dibawah
+	// newSlice := make([]string, 2, 5) // ini sama dgn yg diatas
 
-  fmt.Println(newSlice)
-  fmt.Println(len(newSlice)) // length dari slice
-  fmt.Println(cap(newSlice)) // kapasitas dari slice
+	newSlice[0] = "Juancok"
+	newSlice[1] = "Juancok"
+	// newSlice[2] = "Juancok" // error, harusnya menggunakan append
 
+	fmt.Println(newSlice)
+	fmt.Println(len(newSlice)) // length dari slice
+	fmt.Println(cap(newSlice)) // kapasitas dari slice
 
-  newSlice2 := append(newSlice, "Riko")
-  fmt.Println(newSlice2)
-  fmt.Println(len(newSlice2)) // length dari slice
-  fmt.Println(cap(newSlice2)) // kapasitas dari slice
+	newSlice2 := append(newSlice, "Riko")
+	fmt.Println(newSlice2)
+	fmt.Println(len(newSlice2)) // length dari slice
+	fmt.Println(cap(newSlice2)) // kapasitas dari slice
 
-  newSlice2[0] = "Lontong"
-  fmt.Println(newSlice2)
-  fmt.Println(newSlice)
+	newSlice2[0] = "Lontong"
+	fmt.Println(newSlice2)
+	fmt.Println(newSlice)
 
-fmt.Println("-------------------batas------------------")
+	fmt.Println("-------------------batas------------------")
 
-  // # Kode Program Copy Slice
-  fromSlice := days[:] // ambil semua data array dari days
+	// # Kode Program Copy Slice
+	fromSlice := days[:] // ambil semua data array dari days
 
-  // buat slice lalu ambil length nya dari array days dan capacity juga
-  toSlice := make([]string, len(fromSlice), cap(fromSlice))
+	// buat slice lalu ambil length nya dari array days dan capacity juga
+	toSlice := make([]string, len(fromSlice), cap(fromSlice))
 
-  copy(toSlice, fromSlice)
+	copy(toSlice, fromSlice)
 
-  fmt.Println(toSlice)
+	fmt.Println(fromSlice)
+	fmt.Println(toSlice)
+
+	// !Note => Hati-Hati saat membuat array
+	// - Saat membuat Array, kita harus berhati-hati, jika salah, maka yg kita buat bukanlah Array, melainkan slice
+
+	fmt.Println("----------------batas---------------------")
+
+	// Kode Program Array vs Slice
+	iniArray := [...]int{1, 2, 3, 4, 5}
+	iniSlice := []int{1, 2, 3, 4, 5}
+
+	fmt.Println(iniArray) // [1 2 3 4 5 ]
+	fmt.Println(iniSlice) // [1 2 3 4 5 ]
 
 }
