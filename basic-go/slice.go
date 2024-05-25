@@ -177,4 +177,5 @@ func main() {
 	fmt.Println(iniArray) // [1 2 3 4 5 ]
 	fmt.Println(iniSlice) // [1 2 3 4 5 ]
 
+
 }
