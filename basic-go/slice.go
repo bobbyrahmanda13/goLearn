@@ -150,7 +150,7 @@ func main() {
 
 	newSlice2[0] = "Lontong"
 	fmt.Println(newSlice2)
-	fmt.Println(newSlice)
+	fmt.Println(newSlice) // ini masih menggunakan array yg sama karena masih memiliki kapasitas yg cukup, jika kapasitas nya sudah penuh maka "append" akan membuat array baru
 
 	fmt.Println("-------------------batas------------------")
 
