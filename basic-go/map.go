@@ -11,21 +11,22 @@ import "fmt"
 func main(){
 
   // # ini map yang lansung dimasukkan datanya
-  // person := map[string]string{ // map[string] = ini adalah map type value nya string, sedangkan string{} ini adalah type untuk nilai nya
-  //   "name" : "Rahman",
-  //   "address" : "Paris",
-  // }
+  person := map[string]string{ // map[string] = ini adalah map type value nya string, sedangkan string{} ini adalah type untuk nilai nya
+    "name" : "Rahman",
+    "address" : "Paris",
+  }
 
-  // deklarasikan map
-  var person map[string]string = map[string]string{} // ini adalah map kosong alias tanpa data
+  // 1. deklarasikan map
+  // var person map[string]string = map[string]string{} // ini adalah map kosong alias tanpa data
 
-  // lalu isikan datanya person["name"] adalah lah key nya
+  // 2. lalu isikan datanya person["name"] adalah lah key nya
   // sedangkan setelah = itu adalah value data nya
-  person["name"] = "Rahman"
-  person["address"] = "Paris"
+  // person["name"] = "Rahman"
+  // person["address"] = "Paris"
 
   fmt.Println(person)
   fmt.Println(person["name"])
   fmt.Println(person["address"])
+
 
 }
