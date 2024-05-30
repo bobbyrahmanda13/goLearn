@@ -16,6 +16,8 @@ func main(){
     "address" : "Paris",
   }
 
+  // note! pada map ini bebas untuk buat key nya tanpa ada batasannya
+
   // 1. deklarasikan map
   // var person map[string]string = map[string]string{} // ini adalah map kosong alias tanpa data
 
@@ -24,9 +26,10 @@ func main(){
   // person["name"] = "Rahman"
   // person["address"] = "Paris"
 
-  fmt.Println(person)
   fmt.Println(person["name"])
   fmt.Println(person["address"])
+  fmt.Println(person)
 
+  fmt.Println(person["salah"])
 
 }
