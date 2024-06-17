@@ -31,4 +31,17 @@ func main() {
 	// kadang kita ingin melakukan eksekusi program tertentu jika kondisi if bernilai false
 	// hal ini bisa dilakukan menggunakan else expression
 
+  // Else If Expression
+  // - Kadang dalam if, kita butuh membuat beberapa kondisi
+  // - Kasus seperti ini, kita bisa menggunakan else if expression
+  // - jika kondisi if dan else if tidak terpenuhi maka dapat menambahkan else
+
+  // # Kode program if Else
+
+  nama :="Rahman"
+
+  if name == "Rahman" {
+    fmt.Println("Hello", name)
+  }
+
 }
