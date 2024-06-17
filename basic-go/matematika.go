@@ -86,9 +86,9 @@ func main() {
 
 	j++ // j = j +1
 	fmt.Println(j)
-  fmt.Println("----------------------")
+	fmt.Println("----------------------")
 
-  j--
-  fmt.Println(j)
+	j--
+	fmt.Println(j)
 
 }

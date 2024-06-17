@@ -8,50 +8,49 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
-  // # ini map yang lansung dimasukkan datanya
-  person := map[string]string{ // map[string] = ini adalah map type value nya string, sedangkan string{} ini adalah type untuk nilai nya
-    "name" : "Rahman",
-    "address" : "Paris",
-  }
+	// # ini map yang lansung dimasukkan datanya
+	person := map[string]string{ // map[string] = ini adalah map type value nya string, sedangkan string{} ini adalah type untuk nilai nya
+		"name":    "Rahman",
+		"address": "Paris",
+	}
 
-  // note! pada map ini bebas untuk buat key nya tanpa ada batasannya
+	// note! pada map ini bebas untuk buat key nya tanpa ada batasannya
 
-  // 1. deklarasikan map
-  // var person map[string]string = map[string]string{} // ini adalah map kosong alias tanpa data
+	// 1. deklarasikan map
+	// var person map[string]string = map[string]string{} // ini adalah map kosong alias tanpa data
 
-  // 2. lalu isikan datanya person["name"] adalah lah key nya
-  // sedangkan setelah = itu adalah value data nya
-  // person["name"] = "Rahman"
-  // person["address"] = "Paris"
+	// 2. lalu isikan datanya person["name"] adalah lah key nya
+	// sedangkan setelah = itu adalah value data nya
+	// person["name"] = "Rahman"
+	// person["address"] = "Paris"
 
-  fmt.Println(person["name"])
-  fmt.Println(person["address"])
-  fmt.Println(person)
+	fmt.Println(person["name"])
+	fmt.Println(person["address"])
+	fmt.Println(person)
 
-  fmt.Println(person["salah"])
+	fmt.Println(person["salah"])
 
+	// * Function Map
+	// Operasi | Keterangan
+	// len(map) | Untuk mendapatkan jumlah data di map
+	// map[key] | Mengambil data di map dengan key
+	// map[key] = value | Mengubah data di map dengan key
+	// make(map[TypeKey]TypeValue) | Membuat map baru
+	// delete(map, key) | Menghapus data di map dengan key
 
-  // * Function Map
-  // Operasi | Keterangan
-  // len(map) | Untuk mendapatkan jumlah data di map
-  // map[key] | Mengambil data di map dengan key
-  // map[key] = value | Mengubah data di map dengan key
-  // make(map[TypeKey]TypeValue) | Membuat map baru
-  // delete(map, key) | Menghapus data di map dengan key
+	// Kode Program map
+	book := make(map[string]string) // membuat map baru
+	book["title"] = "buku Go-Lang"
+	book["author"] = "Eko Kurniawan"
+	book["wrong"] = "Ups"
 
-  // Kode Program map
-  book := make(map[string]string) // membuat map baru
-  book["title"] = "buku Go-Lang"
-  book["author"] = "Eko Kurniawan"
-  book["wrong"] = "Ups"
+	fmt.Println(book)
 
-  fmt.Println(book)
-
-  delete(book,"wrong")
-  // delete(book,"title") // hapus map title
-  // delete(book,"author") // hapus map author
-  fmt.Println(book)
+	delete(book, "wrong")
+	// delete(book,"title") // hapus map title
+	// delete(book,"author") // hapus map author
+	fmt.Println(book)
 
 }

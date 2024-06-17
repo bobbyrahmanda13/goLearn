@@ -27,26 +27,25 @@ package main
 
 import "fmt"
 
-func main(){
-  var (
-    name1 = "rahman"
-    name2 = "rahman"
+func main() {
+	var (
+		name1 = "rahman"
+		name2 = "rahman"
 
-    name3 = "jancok"
-    name4 = "taik"
+		name3 = "jancok"
+		name4 = "taik"
 
-    name5 = "jancok"
+		name5 = "jancok"
 
-    result bool = name1 == name2
-    result2 bool = name3 == name4
-    result3 bool = name3 != name4
-    result4 bool = name3 != name5
-  )
+		result  bool = name1 == name2
+		result2 bool = name3 == name4
+		result3 bool = name3 != name4
+		result4 bool = name3 != name5
+	)
 
-  fmt.Println(result) // true
-  fmt.Println(result2) // false
-  fmt.Println(result3) // true
-  fmt.Println(result4) // false
+	fmt.Println(result)  // true
+	fmt.Println(result2) // false
+	fmt.Println(result3) // true
+	fmt.Println(result4) // false
 
 }
-

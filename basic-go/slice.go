@@ -126,10 +126,9 @@ func main() {
 
 	fmt.Println("-----------------batas---------------------")
 
-  // !note => jika array masih memiliki kapasitas yang cukup maka masih bisa menggunakan array yang sama
-  // jadi tidak buang2 array 
-  // jangan sampai setiap kita bikin append kita bikin array baru, append kita bikin array baru, karena itu akan membuat aplikasi kita akan menjadi sangat lambat
-
+	// !note => jika array masih memiliki kapasitas yang cukup maka masih bisa menggunakan array yang sama
+	// jadi tidak buang2 array
+	// jangan sampai setiap kita bikin append kita bikin array baru, append kita bikin array baru, karena itu akan membuat aplikasi kita akan menjadi sangat lambat
 
 	// # Kode Program Make slice => ini cara untuk membuat slice lansung
 
@@ -173,14 +172,14 @@ func main() {
 
 	// Kode Program Array vs Slice
 	iniArray := [...]int{1, 2, 3, 4, 5} // ini array
-	iniArrayy := [5]int{1, 2, 3, 4} // ini array [5] adalah kapasitas array, jika jumlah datanya lebih dari 5 maka akan error
-	iniSlice := []int{1, 2, 3, 4, 5} // membuat slice jika ingin lansung buat datanya 
+	iniArrayy := [5]int{1, 2, 3, 4}     // ini array [5] adalah kapasitas array, jika jumlah datanya lebih dari 5 maka akan error
+	iniSlice := []int{1, 2, 3, 4, 5}    // membuat slice jika ingin lansung buat datanya
 
-// beda slice sama array itu :
-  // 1. Deklarasinya tidak ada jumlah datanya
+	// beda slice sama array itu :
+	// 1. Deklarasinya tidak ada jumlah datanya
 
-	fmt.Println(iniArray) // [1 2 3 4 5 ]
+	fmt.Println(iniArray)  // [1 2 3 4 5 ]
 	fmt.Println(iniArrayy) // [1 2 3 4 5 ]
-	fmt.Println(iniSlice) // [1 2 3 4 5 ]
+	fmt.Println(iniSlice)  // [1 2 3 4 5 ]
 
 }

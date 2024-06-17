@@ -62,7 +62,7 @@ func main() {
 	valuess[0] = 100 // format valuess[0] = 100 => valuess adalah array, [0] ini = index, 100 adalah value
 	fmt.Println(valuess)
 
-  // note : question => bagaimana cara menghapus data array
-  // answer : digolang tidak ada cara untuk menghapus data array
-  // jadi jika array nya sudah ditentukan ya akan seperti yang ditentukan itu tidak dapat di hapus, palingan index nya di isi menjadi kosong tapi array nya tetap
+	// note : question => bagaimana cara menghapus data array
+	// answer : digolang tidak ada cara untuk menghapus data array
+	// jadi jika array nya sudah ditentukan ya akan seperti yang ditentukan itu tidak dapat di hapus, palingan index nya di isi menjadi kosong tapi array nya tetap
 }

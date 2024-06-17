@@ -11,14 +11,14 @@ import "fmt"
 func main() {
 	type NoKTP string // tipe data baru yg namanya NoKTP bertipe string tapi itu sebenarnya adalah alias untuk tipe data string
 
-  var ktpRahman NoKTP = "223123123"
+	var ktpRahman NoKTP = "223123123"
 
-  var contoh string = "33333333"
-  var contohKtp NoKTP = NoKTP(contoh)
+	var contoh string = "33333333"
+	var contohKtp NoKTP = NoKTP(contoh)
 
 	fmt.Println(ktpRahman)
 	// fmt.Println(NoKTP("444444444"))
-  // fmt.Println(contohKtp)
-  fmt.Println(NoKTP(contohKtp))
+	// fmt.Println(contohKtp)
+	fmt.Println(NoKTP(contohKtp))
 
 }

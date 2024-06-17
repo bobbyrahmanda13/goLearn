@@ -40,17 +40,17 @@ package main
 
 import "fmt"
 
-func main(){
-  var nilaiAkhir = 90
-  var absensi = 80
+func main() {
+	var nilaiAkhir = 90
+	var absensi = 80
 
-  var lulusNilaiAkhir bool = nilaiAkhir > 80 // true
-  var lulusAbsensi bool = absensi > 80 // false
+	var lulusNilaiAkhir bool = nilaiAkhir > 80 // true
+	var lulusAbsensi bool = absensi > 80       // false
 
-  var lulus bool = lulusNilaiAkhir && lulusAbsensi // false
+	var lulus bool = lulusNilaiAkhir && lulusAbsensi // false
 
-  var lulus2 bool = lulusNilaiAkhir || lulusAbsensi // true
+	var lulus2 bool = lulusNilaiAkhir || lulusAbsensi // true
 
-  fmt.Println(lulus) // false
-  fmt.Println(lulus2) // true
+	fmt.Println(lulus)  // false
+	fmt.Println(lulus2) // true
 }
