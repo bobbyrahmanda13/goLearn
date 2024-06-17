@@ -11,7 +11,7 @@ func main() {
 
   // var name string = "eko"
   name := "Jancok" // => type data string
-  jancok := false // => type data boolean
+  jancok := true // => type data boolean
   // jancok1 := 223 // => type data number
 
   if name == "Eko" {
@@ -21,7 +21,7 @@ func main() {
   }
 
   if jancok == false {
-    fmt.Println("hy false ")
+    fmt.Println("Hy ", jancok)
   } else {
     fmt.Println("ini true")
   }
