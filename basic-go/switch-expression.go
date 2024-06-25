@@ -21,10 +21,9 @@ func main() {
 		// fmt.Println("Hello ", name)
 		fmt.Println("Hello Richo")
 
-	default:
+	default: // ini sama dengan else pada if expression
 		fmt.Println("Hi, Boleh Kenalan ?")
 
 	}
 
 }
-
