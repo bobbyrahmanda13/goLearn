@@ -26,4 +26,23 @@ func main() {
 
 	}
 
+	// Switch dengan Short Statement
+	// - Sama dengan If, Switch juga mendukung short statement sebelum variable yg akan di check kondisinya
+	// example
+	jancok := "Taik"
+
+	switch length := len(jancok); length > 5 {
+	case true:
+		fmt.Println("Nama Terlalu Panjang")
+	case false:
+		fmt.Println("Nama sudah benar")
+	}
+
+  // note: untuk default sendiri bisa ditambahkan, bisa juga tidak 
+
+  // Swith Tanpa Kondisi
+  // - Kondisi di switch expression tidak wajib
+  // - jika kita menggunakan kondisi di switch expression, kita bisa menambahkan kondisi tersebut di setiap case nya
+
+
 }
