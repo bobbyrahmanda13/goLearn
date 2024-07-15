@@ -38,11 +38,23 @@ func main() {
 		fmt.Println("Nama sudah benar")
 	}
 
-  // note: untuk default sendiri bisa ditambahkan, bisa juga tidak 
+	// note: untuk default sendiri bisa ditambahkan, bisa juga tidak
 
-  // Swith Tanpa Kondisi
-  // - Kondisi di switch expression tidak wajib
-  // - jika kita menggunakan kondisi di switch expression, kita bisa menambahkan kondisi tersebut di setiap case nya
+	// Swith Tanpa Kondisi
+	// - Kondisi di switch expression tidak wajib
+	// - jika kita menggunakan kondisi di switch expression, kita bisa menambahkan kondisi tersebut di setiap case nya
+
+	// Kode program Switch Tanda Kondisi
+	naming := "Rahman"
+	length := len(naming)
+	switch {
+	case length > 10:
+		fmt.Println("Nama Terlalu panjang")
+	case length > 5:
+		fmt.Println("Nama Lumayan Panjang")
+	default:
+		fmt.Println("Nama Sudah Benar")
+	}
 
 
 }
