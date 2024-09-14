@@ -15,6 +15,7 @@ func sayHello() {
 
 func main() {
 	sayHello()
+  sayHelloTo("Rahman","Visalux")
 
   // ! Note : sebuah function bisa di panggil sebanyak2nya atau bisa dibilang tidak terbatas
 }
@@ -24,3 +25,8 @@ func main() {
 // - Kita bisa menambahkan parameter di function, bisa lebih dari satu.
 // - Parameter tidak lah wajib, jadi kita bisa membuat function tanpa parameter seperti sebelumnya yang sudah kita buat
 // - Namun jika kita menambahkan parameter di function, maka ketika memanggil function tersebut, kita wajib memasukkan data ke parameternya
+
+func sayHelloTo(firstName string, lastName string){
+  fmt.Println("Hello", firstName, lastName)
+}
+
