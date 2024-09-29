@@ -26,7 +26,8 @@ func main() {
 // - Parameter tidak lah wajib, jadi kita bisa membuat function tanpa parameter seperti sebelumnya yang sudah kita buat
 // - Namun jika kita menambahkan parameter di function, maka ketika memanggil function tersebut, kita wajib memasukkan data ke parameternya
 
-func sayHelloTo(firstName string, lastName string, nomor int, betul bool){
-  fmt.Println("Hello", firstName, lastName, nomor, betul)
+func sayHelloTo(firstName string, lastName string, jancok int, betul bool){
+  fmt.Println("Hello", firstName, lastName, jancok, betul)
 }
+
 
