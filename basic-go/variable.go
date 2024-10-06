@@ -27,7 +27,7 @@ import "fmt"
 // step 3 => pada golang kata kunci var tidak harus dibuat / tidak lah wajib, jadi bisa digantikan dengan ":=" saat menginisialisasikan data pada variable tersebut
 
 // func main(){
-// name := "Rahman Visalux" => ini cuman deklarsikan datanya saja jadi jika sudah dibuat maka tidak perlu membuat nya lagi jadi dibuat hanya untuk deklarasikan data jadi itu dibuat di awal saja
+// name := "Rahman Visalux" => ini cuman deklarasikan datanya saja jadi jika sudah dibuat maka tidak perlu membuat nya lagi jadi dibuat hanya untuk deklarasikan data jadi itu dibuat di awal saja
 // name := "Rahman Visalux"
 // fmt.Println(name)
 
