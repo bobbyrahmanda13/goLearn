@@ -12,6 +12,8 @@ func getFullName() (string, string) {
 }
 
 func main() {
+
 	firstName, lastName := getFullName()
 	fmt.Println(firstName, lastName)
 }
+
