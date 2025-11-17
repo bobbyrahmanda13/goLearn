@@ -41,7 +41,6 @@ func main() {
 	fmt.Println(values[2])
 	fmt.Println(values)
 
-	// Function Array
 	// Operasi | Keterangan
 	// len(array) | Untuk mendapatkan panjang Array
 	// array[index] | Mendapatkan data di posisi index
