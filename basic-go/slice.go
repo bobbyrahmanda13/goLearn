@@ -1,17 +1,19 @@
-// # Type data Slice
-// type data ini adalah tipe data yg sangat sering digunakan di golang
+/*
+# Type data Slice
+type data ini adalah tipe data yg sangat sering digunakan di golang
 
-// type data slice adalah potongan dari data array
-// slice mirip dengan Array, yg membedakan adalah ukuran slice bisa berubah
-// slice dan array selalu terkoneksi, dimana slice adalah data yg mengakses sebagian atau seluruh data di array
+type data slice adalah potongan dari data array
+slice mirip dengan Array, yg membedakan adalah ukuran slice bisa berubah
+slice dan array selalu terkoneksi, dimana slice adalah data yg mengakses sebagian atau seluruh data di array
 
-// kalau data array sudah di tentukan misalnya data array nya adalah 5 ya, itu jadi 5 berbeda dengan slice yg data nya bisa bertambah secara dinamis
+kalau data array sudah di tentukan misalnya data array nya adalah 5 ya, itu jadi 5 berbeda dengan slice yg data nya bisa bertambah secara dinamis
 
-// * Detail tipe data slice
-// - tipe data slice memiliki 3 data, yaitu pointer, length, dan capacity
-// - pointer adalah penunjuk data pertama di array pada slice
-// - length adalah panjang dari slice,
-// - capacity adalah kapasitas dari slice, dimana length tidak boleh lebih dari capacity
+* Detail tipe data slice
+- tipe data slice memiliki 3 data, yaitu pointer, length, dan capacity
+- pointer adalah penunjuk data pertama di array pada slice
+- length adalah panjang dari slice,
+- capacity adalah kapasitas dari slice, dimana length tidak boleh lebih dari capacity
+*/
 
 // * Membuat Slice dari Array
 
@@ -67,7 +69,7 @@ func main() {
 	names := [...]string{"Rahman", "Visalux", "Gaming", "Riko", "Risma", "Jancok"}
 	slice1 := names[4:6]
 
-	fmt.Println(slice1)
+	fmt.Println("ini slice1", slice1)
 	fmt.Println(slice1[0])
 	fmt.Println(slice1[1])
 
