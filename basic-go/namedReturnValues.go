@@ -7,16 +7,16 @@ package main
 
 import "fmt"
 
-func getCompleteName() (firstName, middleName, lastName string){
-  firstName = "Richo"
-  middleName = "Hardiansyah"
-  lastName = "Buncit"
+func getCompleteName() (firstName, middleName, lastName string) {
+	firstName = "Richo"
+	middleName = "Hardiansyah"
+	lastName = "Buncit"
 
-  return firstName,middleName,lastName
+	return firstName, middleName, lastName
 }
 
 func main() {
 
-  firstName,middleName,lastName:=getCompleteName()
-  fmt.Println(firstName,middleName,lastName)
+	firstName, middleName, lastName := getCompleteName()
+	fmt.Println(firstName, middleName, lastName)
 }

@@ -20,14 +20,13 @@ func main() {
 	firstName, lastName := getFullName()
 	fmt.Println(firstName, lastName) // butuh semuanya
 
-  // # Menghiraukan Return Value
-  // - Multiple return value wajib ditangkap value nya
-  // - Jika kita menghiraukan return value tersebut, kita bisa menggunakan tanda _ (garis bawah)
+	// # Menghiraukan Return Value
+	// - Multiple return value wajib ditangkap value nya
+	// - Jika kita menghiraukan return value tersebut, kita bisa menggunakan tanda _ (garis bawah)
 
 	_, namaAkhir := getGameName()
-  fmt.Println(namaAkhir)
+	fmt.Println(namaAkhir)
 
 	namaAwal, _ := getGameName()
-  fmt.Println(namaAwal)
+	fmt.Println(namaAwal)
 }
-
