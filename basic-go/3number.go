@@ -23,4 +23,5 @@ func main() {
 	fmt.Println("Satu = ", 1)
 	fmt.Println("Dua = ", 2)
 	fmt.Println("Tiga Koma Lima = ", 3.5)
+	fmt.Println("Seratus lima puluh ribu rupiah =", 150000)
 }
