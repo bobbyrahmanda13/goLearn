@@ -9,27 +9,34 @@ package main
 
 import "fmt"
 
-// step 1
-// func main(){
-//   var name string // jika type data pada name dihilangkan maka akan error
-//
-//   name = "Rahman Gaming"
-//   fmt.Println(name)
-//
-//   name = "Rahman Ganteng"
-//   fmt.Println(name)
-// }
+/*
+step 1
+func main(){
+  var name string // jika type data pada name dihilangkan maka akan error
 
-// step 2 = cara lansung karena golang tau kita mau menggunakan tipe data apa akan di detect secara otomatis
-// func main() {
+  name = "Rahman Gaming"
+  fmt.Println(name)
+// result = "Rahman Gaming"
 
-// var name string = "Rahman Gaming" // cara ini menjadi tidak wajib karena golang sudah tau type data yang digunakan jadi percuma bikin kek ginian
-// 	var name = "Rahman Gaming"
-// 	fmt.Println(name)
-//
-// 	name = "Rahman Ganteng"
-// 	fmt.Println(name)
-// }
+
+  name = "Rahman Ganteng"
+  fmt.Println(name)
+// result = "Rahman Ganteng" -> berubah hasil nya
+}
+*/
+
+/*
+step 2 = cara lansung karena golang tau kita mau menggunakan tipe data apa akan di detect secara otomatis
+func main() {
+
+var name string = "Rahman Gaming" // cara ini menjadi tidak wajib karena golang sudah tau type data yang digunakan jadi percuma bikin kek ginian
+	var name = "Rahman Gaming"
+	fmt.Println(name)
+
+	name = "Rahman Ganteng"
+	fmt.Println(name)
+}
+*/
 
 // step 3 => pada golang kata kunci var tidak harus dibuat / tidak lah wajib, jadi bisa digantikan dengan ":=" saat menginisialisasikan data pada variable tersebut
 
