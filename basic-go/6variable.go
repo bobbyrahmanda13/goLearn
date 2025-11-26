@@ -26,10 +26,12 @@ func main(){
 */
 
 /*
-step 2 = cara lansung karena golang tau kita mau menggunakan tipe data apa akan di detect secara otomatis
+// step 2 = cara lansung karena golang tau kita mau menggunakan tipe data apa akan di detect secara otomatis
+
 func main() {
 
-var name string = "Rahman Gaming" // cara ini menjadi tidak wajib karena golang sudah tau type data yang digunakan jadi percuma bikin kek ginian
+	// var name string = "Rahman Gaming" // cara ini menjadi tidak wajib karena golang sudah tau type data yang digunakan jadi percuma bikin kek ginian
+
 	var name = "Rahman Gaming"
 	fmt.Println(name)
 
