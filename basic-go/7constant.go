@@ -1,4 +1,6 @@
 // constant
+package main
+
 // - adalah variable yang nilai nya tidak bisa diubah lagi setelah pertama kali diberi nilai
 // - cara pembuatannya constant mirip dengan variable, yg membedakannya hanya kata kunci yang digunakan adalah const, bukan var
 // - saat pembuatan constant, kita wajib lansung menginisialisasikan datanya package main
