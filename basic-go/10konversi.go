@@ -42,8 +42,8 @@ func main() {
 		eString       = string(e)
 	)
 
-	fmt.Println(name)
-	fmt.Println(e)
-	fmt.Println(eString)
+	fmt.Println(name)    Rahman Visalux
+	fmt.Println(e) // 82
+	fmt.Println(eString) // R
 
 }
