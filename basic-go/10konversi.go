@@ -31,9 +31,9 @@ func main() {
 		nilai16 int16 = int16(nilai32)
 	)
 
-	fmt.Println(nilai32)
-	fmt.Println(nilai64)
-	fmt.Println(nilai16)
+	fmt.Println(nilai32) // 32768
+	fmt.Println(nilai64) // 32768
+	fmt.Println(nilai16) // -32768
 
 	// kode program konversi tipe data (2)
 	var (
