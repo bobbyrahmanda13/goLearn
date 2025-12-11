@@ -1,10 +1,12 @@
-// operasi matematika
-// operator = keterangan
-// + => penjumlahan
-// - => pengurangan
-// * => perkalian
-// / => pembagian
-// % => sisa pembagian
+/*
+operasi matematika
+operator = keterangan
++ => penjumlahan
+- => pengurangan
+* => perkalian
+/ => pembagian
+% => sisa pembagian
+*/
 
 // note! => operasi matematika diatas digunakan pada type data number
 
