@@ -8,7 +8,7 @@ operator = keterangan
 % => sisa pembagian
 */
 
-// note! => operasi matematika diatas digunakan pada type data number
+// NOTE: operasi matematika diatas digunakan pada type data number
 
 package main
 
@@ -16,14 +16,17 @@ import "fmt"
 
 func main() {
 	var (
+
 		// penjumlahan
 		a = 10
 		b = 10
 		c = a + b
+
 		// pengurangan
 		d = 5
 		e = 10
 		f = d - e
+
 		// perkalian
 		kali1 = 50
 		kali2 = 30
@@ -60,22 +63,26 @@ func main() {
 	fmt.Println(tbagi)
 	fmt.Println(tsbagi)
 
-	// augmented assigment
-	// operasi matematika => augmented assigment
+	/*
+		augmented assigment
+		operasi matematika => augmented assigment
 
-	// a = a + 10 => a += 10
-	// a = a - 10 => a -= 10
-	// a = a * 10 => a *= 10
-	// a = a / 10 => a /= 10
-	// a = a % 10 => a %= 10
+		a = a + 10 => a += 10
+		a = a - 10 => a -= 10
+		a = a * 10 => a *= 10
+		a = a / 10 => a /= 10
+		a = a % 10 => a %= 10
+	*/
 
-	// Unary Operator
-	// operator = keterangan
-	//   ++ => a = a + 1
-	//   -- => a = a - 1
-	//   - => Negative
-	//   + => Positive
-	//   ! => Boolean Kebalikan
+	/*
+		Unary Operator
+		operator = keterangan
+		  ++ => a = a + 1
+		  -- => a = a - 1
+		  - => Negative
+		  + => Positive
+		  ! => Boolean Kebalikan
+	*/
 
 	// Kode Program Unary Operator
 	fmt.Println("-----------------------")
@@ -90,7 +97,7 @@ func main() {
 	fmt.Println(j)
 	fmt.Println("----------------------")
 
-	j--
+	j-- // j= 1 -1
 	fmt.Println(j)
 
 }
