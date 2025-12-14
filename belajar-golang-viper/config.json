@@ -1,0 +1,13 @@
+{
+  "app":{
+    "name":"belajar-golang-viper",
+    "version":"1.0.0",
+    "author":"BOBBY RAHMANDA"
+  },
+  "database":{
+    "show_sql":true,
+    "host":"localhost",
+    "port":"3306"
+
+  }
+}
