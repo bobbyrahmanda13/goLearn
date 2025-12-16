@@ -3,8 +3,8 @@
 
 - operasi perbandingan adalah operasi untuk membandingkan dua buah data
 - operasi perbandingan adalah operasi yg menghasilkan nilai boolean ( benar / salah )
-- jika hasl operasinya adalah benar, maka nilainya adalah true
-- jika hasl operasinya adalah salah, maka nilainya adalah false
+- jika hasil operasinya adalah benar, maka nilainya adalah true
+- jika hasil operasinya adalah salah, maka nilainya adalah false
 */
 
 /*
@@ -63,7 +63,7 @@ func main() {
 
 	var (
 		nilaiAkhir = 0
-		absensi  = 80
+		absensi    = 80
 	)
 	var lulusNilaiAkhir bool = nilaiAkhir > 80
 	var lulusAbsensi bool = absensi > 80
