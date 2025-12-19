@@ -26,6 +26,7 @@ array[:] | Membuat Slice dari Array dimulai dari index 0 sampai index akhir di A
 */
 
 /*
+
 Slice dan Array
 
 contoh :
