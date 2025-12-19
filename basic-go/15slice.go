@@ -71,7 +71,9 @@ package main
 import "fmt"
 
 func main() {
-	names := [...]string{"Rahman", "Visalux", "Gaming", "Riko", "Risma", "Jancok"}
+	names := [...]string{
+		"Rahman", "Visalux", "Gaming", "Riko", "Risma", "Jancok",
+	}
 	slice1 := names[4:6]
 
 	fmt.Println("ini slice1", slice1)
