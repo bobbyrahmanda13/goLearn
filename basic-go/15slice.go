@@ -76,15 +76,15 @@ func main() {
 	}
 	slice1 := names[4:6]
 
-	fmt.Println("ini slice1", slice1)
-	fmt.Println(slice1[0])
-	fmt.Println(slice1[1])
+	fmt.Println(slice1)    // [Risma Jancok]
+	fmt.Println(slice1[0]) // [Risma]
+	fmt.Println(slice1[1]) // [Jancok]
 
 	slice2 := names[:3]
-	fmt.Println(slice2)
+	fmt.Println(slice2) // [Rahman Visalux Gaming]
 
 	var slice3 []string = names[3:]
-	fmt.Println(slice3)
+	fmt.Println(slice3) // [Riko Risma Jancok]
 
 	//  NOTE: jika sudah punya array lalu jika ingin membuat slice dari array yg sudah ada
 	//  NOTE: maka bentuk slice nya akan seperti ini:
@@ -112,7 +112,10 @@ func main() {
 		make([]TypeData, length, capacity) | Membuat slice baru
 		copy(destination, source) | menyalin slice dari source ke destination
 	*/
+	fmt.Println("panjang Slice2 = ", len(slice1))   // panjang slice1 = 2
+	fmt.Println("kapasitas slice2 = ", cap(slice1)) // kapasitas slice1 = 2
 
+	// * Append Slice
 	// # Kode Program Append Slice
 	fmt.Println("---------------------batas---------------------")
 
