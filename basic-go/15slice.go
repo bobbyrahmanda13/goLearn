@@ -138,6 +138,9 @@ func main() {
 
 	daySlice2[0] = "Ups"
 	fmt.Println(daySlice2) // [Ups, Minggu Baru, Libur Baru]
+
+	daySlice2[1] = "Cao"
+	fmt.Println(daySlice2) // [Ups, Cao, Libur Baru]
 	fmt.Println(days)      // [Senin, Selasa, Rabu, Kamis, Jumat, Sabtu Baru, Minggu Baru]
 
 	fmt.Println("-----------------batas---------------------")
@@ -155,28 +158,35 @@ func main() {
 	newSlice[1] = "Juancok"
 	// newSlice[2] = "Juancok" // error, harusnya menggunakan append
 
-	fmt.Println(newSlice)
-	fmt.Println(len(newSlice)) // length dari slice
-	fmt.Println(cap(newSlice)) // kapasitas dari slice
+	fmt.Println(newSlice)      // Juancok Juancok
+	fmt.Println(len(newSlice)) // length dari slice = 2
+	fmt.Println(cap(newSlice)) // kapasitas dari slice = 5
 
 	newSlice2 := append(newSlice, "Riko")
-	fmt.Println(newSlice2)
-	fmt.Println(len(newSlice2)) // length dari slice
-	fmt.Println(cap(newSlice2)) // kapasitas dari slice
+	fmt.Println(newSlice2)      // Juancok Juancok Riko
+	fmt.Println(len(newSlice2)) // length dari slice = 3
+	fmt.Println(cap(newSlice2)) // kapasitas dari slice = 5
 
 	newSlice2[0] = "Lontong"
-	fmt.Println(newSlice2)
-	fmt.Println(newSlice) // ini masih menggunakan array yg sama karena masih memiliki kapasitas yg cukup, jika kapasitas nya sudah penuh maka "append" akan membuat array baru
+	fmt.Println(newSlice2) // Lontong Juancok Riko
+	fmt.Println(newSlice)  // ini masih menggunakan array yg sama karena masih memiliki kapasitas yg cukup, jika kapasitas nya sudah penuh maka "append" akan membuat array baru
 
 	fmt.Println("-------------------batas------------------")
 
 	// # Kode Program Copy Slice
 	fromSlice := days[:] // ambil semua data array dari days
+	cobaSlice := names[:]
 
 	// buat slice lalu ambil length nya dari array days dan capacity juga
 	toSlice := make([]string, len(fromSlice), cap(fromSlice)) // ini cara membuat slice menggunakan make
 
-	copy(toSlice, fromSlice)
+	hasilSlice := make([]string, len(cobaSlice), cap(cobaSlice))
+
+	copy(toSlice, fromSlice)    // Contoh copy ke 1)
+	copy(hasilSlice, cobaSlice) // contoh copy ke 2
+
+	fmt.Println(cobaSlice)
+	fmt.Println(hasilSlice)
 
 	fmt.Println(fromSlice)
 	fmt.Println(toSlice)
