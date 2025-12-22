@@ -30,7 +30,7 @@ func main() {
 	fmt.Println(person["address"])
 	fmt.Println(person)
 
-	fmt.Println(person["salah"])
+	fmt.Println(person["salah"]) // akan tercetak data string kosong // hasil = ""
 
 	// * Function Map
 	// Operasi | Keterangan
