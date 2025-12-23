@@ -41,12 +41,20 @@ func main() {
 	// delete(map, key) | Menghapus data di map dengan key
 
 	// Kode Program map
+	// #1
 	book := make(map[string]string) // membuat map baru
 	book["title"] = "buku Go-Lang"
 	book["author"] = "Eko Kurniawan"
 	book["wrong"] = "Ups"
 
+	book2 := map[string]string{
+		"nama buku": "Buku Go Go Go",
+		"author":    "Rahman",
+		"wrong":     "Ups Go-lang ternyata",
+	}
+
 	fmt.Println(book)
+	fmt.Println(book2)
 
 	delete(book, "wrong")
 	// delete(book,"title") // hapus map title
