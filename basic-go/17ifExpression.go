@@ -48,38 +48,35 @@ func main() {
 		fmt.Println("Hai Boleh Kenalan")
 	}
 
-  // IF dengan short statement
-  // if mendukung short statement sebelum kondisi 
-  // hal ini sangat cocok untuk membuat statement yang sederhana sebelum melakukan pengecekan terhadap kondisi
+	// IF dengan short statement
+	// if mendukung short statement sebelum kondisi
+	// hal ini sangat cocok untuk membuat statement yang sederhana sebelum melakukan pengecekan terhadap kondisi
 
-  // Kode Program if short statement
+	// Kode Program if short statement
 
-  // biasanya seperti ini :
+	// biasanya seperti ini :
 
-  // taik := "visalux" 
-  // masha := len(taik)
-  //
-  // if masha > 5 {
-  //   fmt.Println("Nama Terlalu panjang")
-  // } else {
-  //   fmt.Println("Nama sudah benar")
-  // }
+	// taik := "visalux"
+	// masha := len(taik)
+	//
+	// if masha > 5 {
+	//   fmt.Println("Nama Terlalu panjang")
+	// } else {
+	//   fmt.Println("Nama sudah benar")
+	// }
 
-  // Kode Program if short statement
+	// Kode Program if short statement
 
-  taik := "visalux" 
+	taik := "visalux"
 
-  if masha := len(taik); masha > 5 {
-    fmt.Println("Nama Terlalu panjang")
-  } else {
-    fmt.Println("Nama sudah benar")
-  }
+	if masha := len(taik); masha > 5 {
+		fmt.Println("Nama Terlalu panjang")
+	} else {
+		fmt.Println("Nama sudah benar")
+	}
 
-  // cat :
-  // masha adalah variabel, len(taik) = statement len menghitung jumlah karakter, taik = variabel yang berisi string  kata "visalux", ; (titik koma) = sebagai pembatas untuk kondisi
-  // masha > 5 => maksudnya variabel masha yang berisi panjang karakter dari variabel taik, lalu > 5 yang jika angka nya lebih dari 5 maka tercetak "Nama Terlalu Panjang", jika tidak terpenuhi (else) maka yang tercetak adalah "Nama sudah benar"
-
-
+	// cat :
+	// masha adalah variabel, len(taik) = statement len menghitung jumlah karakter, taik = variabel yang berisi string  kata "visalux", ; (titik koma) = sebagai pembatas untuk kondisi
+	// masha > 5 => maksudnya variabel masha yang berisi panjang karakter dari variabel taik, lalu > 5 yang jika angka nya lebih dari 5 maka tercetak "Nama Terlalu Panjang", jika tidak terpenuhi (else) maka yang tercetak adalah "Nama sudah benar"
 
 }
-
