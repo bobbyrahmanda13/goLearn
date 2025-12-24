@@ -45,8 +45,8 @@ func main() {
 	// - jika kita menggunakan kondisi di switch expression, kita bisa menambahkan kondisi tersebut di setiap case nya
 
 	// Kode program Switch Tanda Kondisi
-	naming := "Rahman"
-	length := len(naming)
+	name = "taikkkkkkkkkk"
+	length := len(name)
 	switch {
 	case length > 10:
 		fmt.Println("Nama Terlalu panjang")
@@ -55,6 +55,5 @@ func main() {
 	default:
 		fmt.Println("Nama Sudah Benar")
 	}
-
 
 }
