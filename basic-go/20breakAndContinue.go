@@ -12,16 +12,19 @@ func main() {
 	// fmt.Println("hello world")
 	// # Kode Program Break
 	for i := 0; i < 10; i++ {
-		if i == 5 {
+		if i == 7 {
 			break
 		}
 		fmt.Println("Perulangan Ke", i)
+
 	}
+
+	fmt.Println(" ")
 
 	// # Kode Program Continue
 	for i := 0; i < 10; i++ {
 		if i%2 == 0 {
-      continue
+			continue
 		}
 		fmt.Println("Perulangan Ke", i)
 	}
