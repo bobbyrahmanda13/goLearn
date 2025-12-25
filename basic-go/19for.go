@@ -35,32 +35,32 @@ func main() {
 
 	fmt.Println("Selesai")
 
-	// # For Range
-	// for bisa digunakan untuk melakukan iterasi terhadap semua data collection
-	// data collection contoh nya Array, Slice dan Map
+	/*
 
-	// % Manual
-	// names := []string{"Dassa", "Putra", "Ganteng"}
-	// for i := 0; i < len(names); i++ {
-	// 	fmt.Println(names[i])
-	// }
+		# For Range
+		for bisa digunakan untuk melakukan iterasi terhadap semua data collection
+		data collection contoh nya Array, Slice dan Map
+
+		% Manual
+		names := []string{"Dassa", "Putra", "Ganteng"}
+		for i := 0; i < len(names); i++ {
+		fmt.Println(names[i])
+		}
+
+	*/
 
 	// % For Range
 
-	names := []string{"Dassa", "Putra", "Ganteng"}
+	names := []string{"Dassa", "Putra", "Ganteng"} // slice
 
 	for index, name := range names {
 		fmt.Println("index", index, "=", name)
 	}
 
-	for i, name2 := range names {
-		fmt.Println("index", i, "=", name2)
-	}
-
 	// # jika tidak butuh index nya maka diganti dengan _ (underscore)
-	for _, name3 := range names {
-		// fmt.Println("Urutan nama Perkata", name3)
-		fmt.Println(name3)
+	for _, name2 := range names {
+		// fmt.Println("Urutan nama Perkata", name2)
+		fmt.Println(name2)
 	}
 
 }
