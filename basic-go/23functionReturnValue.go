@@ -10,22 +10,20 @@ import "fmt"
 
 func getHai(nama string) string {
 
-  // return "Hai " + nama
+	// return "Hai " + nama
 
-  hello:="Hello " + nama
+	hello := "Hello " + nama
 
-  return hello
+	return hello
 }
 
-func main(){
-  // buat variabel result
-  result := getHai("Rahman")
-  fmt.Println(result)
+func main() {
+	// buat variabel result
+	result := getHai("Rahman")
+	fmt.Println(result)
 
-  fmt.Println(getHai("Budi"))
-  fmt.Println(getHai("joko"))
-  fmt.Println(getHai("jancok"))
+	fmt.Println(getHai("Budi"))
+	fmt.Println(getHai("joko"))
+	fmt.Println(getHai("jancok"))
 
 }
-
-
