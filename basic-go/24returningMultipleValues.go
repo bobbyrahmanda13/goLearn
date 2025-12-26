@@ -15,6 +15,11 @@ func getGameName() (string, string) {
 	return "GOD", "Visalux"
 }
 
+func getNameSayang() (string, int, string, bool) {
+
+	return "Windy Annisa", 17, "Juni", true
+}
+
 func main() {
 
 	firstName, lastName := getFullName()
@@ -29,4 +34,10 @@ func main() {
 
 	namaAwal, _ := getGameName()
 	fmt.Println(namaAwal)
+
+	NamaPasangan, tglLahir, BulanLahir, benar := getNameSayang()
+	fmt.Println(NamaPasangan, tglLahir, BulanLahir, benar)
+
+	NamaCewek, tgl, bulan, _ := getNameSayang()
+	fmt.Println(NamaCewek, tgl, bulan)
 }
