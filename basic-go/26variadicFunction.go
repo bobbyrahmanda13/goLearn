@@ -26,9 +26,11 @@ func main() {
 	fmt.Println(sumAll(10, 10, 10, 10, 10, 10, 10, 10))
 	fmt.Println(sumAll(10, 10, 10))
 
-	// Slice parameter
-	// - kadang ada kasus dimana kita sudah menggunakan variadic function namun memiliki berupa slice
-	// - kita bisa menjadikan slice sebagai varags paremeter
+	/*
+		Slice parameter
+		- kadang ada kasus dimana kita sudah menggunakan variadic function namun memiliki berupa slice
+		- kita bisa menjadikan slice sebagai varags paremeter
+	*/
 
 	numer := []int{10, 10, 10, 10, 10}
 	fmt.Println(sumAll(numer...))
