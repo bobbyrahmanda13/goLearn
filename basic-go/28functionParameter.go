@@ -30,7 +30,7 @@ func spamFilter(name string) string {
 }
 
 func main() {
-	sayHelloWithFilter("Rahman", spamFilter)
+	sayHelloWithFilter("Asu", spamFilter)
 
 	filter := spamFilter
 	sayHelloWithFilter("Tai", filter)
