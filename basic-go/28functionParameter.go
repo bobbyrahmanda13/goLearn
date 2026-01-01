@@ -8,6 +8,31 @@ package main
 
 import "fmt"
 
+func sayHelloWithFilter(name string, filter func(string) string) {
+	filteredName := filter(name)
+	fmt.Println("Hello", filteredName)
+}
+
+func spamFilter(name string) string {
+	if name == "Babi" {
+		return "..."
+	}
+	if name == "Anjing" {
+		return "..."
+	}
+	if name == "Tai" {
+		return "..."
+	}
+	if name == "Asu" {
+		return "..."
+	}
+
+	return name
+}
+
 func main() {
-	fmt.Println("hello world")
+	sayHelloWithFilter("Rahman", spamFilter)
+
+	filter := spamFilter
+	sayHelloWithFilter("Tai", filter)
 }
