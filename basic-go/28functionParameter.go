@@ -26,7 +26,6 @@ func spamFilter(name string) string {
 	if name == "Asu" {
 		return "..."
 	}
-
 	return name
 }
 
