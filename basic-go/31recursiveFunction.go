@@ -19,8 +19,20 @@ func factorialLoop(value int) int {
 	return result
 }
 
+func factorialRecursive(values int) int {
+	if values == 1 {
+		return 1
+	} else {
+		return values * factorialRecursive(values-1)
+	}
+}
+
 func main() {
+	// - contoh Menggunakan Factorial For Loop
 	result := 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
 	fmt.Println(result)            // 3628800
 	fmt.Println(factorialLoop(10)) // 3628800
+
+	// - contoh menggunakan Factorial Recursive
+	fmt.Println(factorialRecursive(10)) // 3628800
 }
