@@ -20,5 +20,7 @@ func factorialLoop(value int) int {
 }
 
 func main() {
-	fmt.Println(factorialLoop(10))
+	result := 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
+	fmt.Println(result)            // 3628800
+	fmt.Println(factorialLoop(10)) // 3628800
 }
