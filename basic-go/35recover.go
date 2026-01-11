@@ -17,13 +17,27 @@ func endAppp() {
 	fmt.Println("Terjadi Error", message)
 }
 
-// # Recover yang salah
+func asalApp() {
+	fmt.Println("end appp coy")
+
+	messagess := recover()
+	fmt.Println("Terjadi Error", messagess)
+}
+
+func jalanApp(taik string) {
+	defer asalApp()
+	if taik {
+		panic("Error boss")
+	}
+}
 
 func runAppp(error bool) {
 	defer endAppp()
 	if error {
 		panic("ERROR")
 	}
+
+	// # Recover yang salah
 
 	// message := recover()
 	// fmt.Println("Terjadi Error", message)
