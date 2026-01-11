@@ -21,7 +21,7 @@ func asalApp() {
 	fmt.Println("end appp coy")
 
 	messagess := recover()
-	fmt.Println("Terjadi Error", messagess)
+	fmt.Println("Terjadi Error cuy", messagess)
 }
 
 func jalanApp(taik string) {
