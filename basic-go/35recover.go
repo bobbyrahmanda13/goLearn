@@ -13,6 +13,7 @@ func endAppp() {
 
 	// # Recover yang benar
 
+	// testing
 	message := recover()
 	fmt.Println("Terjadi Error", message)
 }
