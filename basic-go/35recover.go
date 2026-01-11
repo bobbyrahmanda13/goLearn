@@ -12,7 +12,6 @@ func endAppp() {
 	fmt.Println("End App")
 
 	// # Recover yang benar
-	// test git
 
 	message := recover()
 	fmt.Println("Terjadi Error", message)
