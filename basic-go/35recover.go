@@ -27,7 +27,7 @@ func asalApp() {
 
 func jalanApp(taik string) {
 	defer asalApp()
-	if taik {
+	if taik == "anjir" {
 		panic("Error boss")
 	}
 }
@@ -46,4 +46,6 @@ func runAppp(error bool) {
 
 func main() {
 	runAppp(true)
+	jalanApp("anjir")
+	fmt.Println("lanjut programmnya")
 }
