@@ -15,10 +15,28 @@ Membuat data Struct
 
 package main
 
+import "fmt"
+
 type Customer struct {
+	// boleh seperti ini
 	Name, Address string
 	Age           int
+
+	/*
+	   // boleh juga seperti ini
+	   Name    string
+	   Address string
+	   Age     int
+	*/
 }
 
 func main() {
+	var bobby Customer
+
+	fmt.Println(bobby)
+
+	bobby.Name = "Bobby Rahmanda"
+	bobby.Address = "Indonesia"
+	bobby.Age = 30
+	fmt.Println(bobby)
 }
