@@ -39,4 +39,12 @@ func main() {
 	bobby.Address = "Indonesia"
 	bobby.Age = 30
 	fmt.Println(bobby)
+	fmt.Println(bobby.Name)
+	fmt.Println(bobby.Address)
+	fmt.Println(bobby.Age)
+
+	/*
+	   # Struct Literals
+	   - sebelumnya kita telah membuat data dari struct, namun sebenernya ada banyak cara yang bisa kita gunakan untuk membuat data dari struct
+	*/
 }
