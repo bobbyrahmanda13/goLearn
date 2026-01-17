@@ -56,4 +56,12 @@ func main() {
 	fmt.Println(bulek)
 	riko := Customer{"Budi", "Indonesia", 30}
 	fmt.Println(riko)
+
+	# Struct Method
+	- struct adalah tipe data seperti tipe data lainnya, dia bisa digunakan sebagai parameter untuk function
+	- Namun jika kita ingin menambahkan method ke dalam struct, sehingga sekan-akan sebuah struct memiliki function
+	- Method adalah function
+
+
+
 }
