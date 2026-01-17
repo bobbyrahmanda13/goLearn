@@ -47,4 +47,13 @@ func main() {
 	   # Struct Literals
 	   - sebelumnya kita telah membuat data dari struct, namun sebenernya ada banyak cara yang bisa kita gunakan untuk membuat data dari struct
 	*/
+
+	bulek := Customer{
+		Name:    "Bulek",
+		Address: "Indonesia",
+		Age:     30,
+	}
+	fmt.Println(bulek)
+	riko := Customer{"Budi", "Indonesia", 30}
+	fmt.Println(riko)
 }
