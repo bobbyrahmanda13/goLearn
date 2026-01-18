@@ -69,6 +69,6 @@ func main() {
 	fmt.Println(riko)
 
 	bobby.sayHello("agus")
-	bobby.sayHello("jancok")
-	bobby.sayHello("haha")
+	bulek.sayHello("jancok")
+	riko.sayHello("haha")
 }
