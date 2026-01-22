@@ -9,7 +9,6 @@ package main
 import "fmt"
 
 func main() {
-
 	// # ini map yang lansung dimasukkan datanya
 	person := map[string]string{ // map[string] = ini adalah map type value nya string, sedangkan string{} ini adalah type untuk nilai nya
 		"name":    "Rahman",
@@ -60,5 +59,4 @@ func main() {
 	// delete(book,"title") // hapus map title
 	// delete(book,"author") // hapus map author
 	fmt.Println(book)
-
 }
