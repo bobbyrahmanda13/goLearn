@@ -12,10 +12,29 @@ type Address struct {
 }
 
 func main() {
-	address1 := Address{"Padang", "Jagakarsa", "Jati"}
-	address2 := address1 // copy value
+	// TEST:
+	// address1 := Address{"Padang", "Jagakarsa", "Jati"}
+	// address2 := address1 // copy value // default
+	// address2.City = "Jakarta Selatan"
+	// fmt.Println(address1) // tidak berubah = {Padang Jagakarsa Jati}
+	// fmt.Println(address2) // berubah menjadi Jakarta Selatan = {Jakarta Selatan Jagakarsa Jati}
+
+	// NOTE:
+	// * Pointer
+	// - adalah kemampuan membuat Reference ke lokasi data di memory yang sama, tanpa menduplikasi data yang sudah ada
+	// - sederhananya, dengan kemampuan pointer, kita bisa membuat pass by reference (data yang sama)
+
+	// NOTE:
+	// * Operator &
+	// - untuk membuat sebuah variable dengan nilai pointer ke variable yang lain, kita bisa menggunakan operator & di ikuti dengan nama variable nya
+
+	var address1 Address = Address{"Padang", "Jagakarsa", "Jati"}
+	var address2 *Address = &address1 // dengan pointer
+
+	// address1 := Address{"Padang", "Jagakarsa", "Jati"}
+	// address2 := &address1 // dengan pointer
 
 	address2.City = "Jakarta Selatan"
-	fmt.Println(address1) // tidak berubah
-	fmt.Println(address2) // berubah menjadi Jakarta Selatan
+	fmt.Println(address1)
+	fmt.Println(address2)
 }
