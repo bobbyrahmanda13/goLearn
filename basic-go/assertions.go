@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func random() any {
-	return true
+	return "OK"
 }
 
 func main() {
@@ -25,6 +25,8 @@ func main() {
 		fmt.Println("String", value)
 	case int:
 		fmt.Println("Int", value)
+	case bool:
+		fmt.Println("Boolean", value)
 	default:
 		fmt.Println("Unknown")
 	}
