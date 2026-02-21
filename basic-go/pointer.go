@@ -35,6 +35,6 @@ func main() {
 	// address2 := &address1 // dengan pointer
 
 	address2.City = "Jakarta Selatan"
-	fmt.Println(address1)
-	fmt.Println(address2)
+	fmt.Println(address1) // ikut berubah
+	fmt.Println(address2) // berubah menjadi Jakarta Selatan
 }
