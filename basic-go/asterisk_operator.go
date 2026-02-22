@@ -17,7 +17,7 @@ func main() {
 	var address2 *Addres = &address1 // dengan pointer
 
 	// TEST:
-	// address1 := Address{"Padang", "Jagakarsa", "Jati"}
+	// address1 := Addres{"Padang", "Jagakarsa", "Jati"}
 	// address2 := &address1 // dengan pointer
 
 	address2.City = "Jakarta Selatan"
