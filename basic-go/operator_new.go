@@ -13,7 +13,10 @@ type Addresss struct {
 }
 
 func main() {
-	var alamat1 *Addresss = &Addresss{} // *Address adalah pointer ke struct
+	// TEST:
+	// var alamat1 *Addresss = &Addresss{} // *Address adalah pointer ke struct // data kosong
+
+	var alamat1 *Addresss = new(Addresss)
 	var alamat2 *Addresss = alamat1
 
 	alamat2.Country = "Indonesia"
