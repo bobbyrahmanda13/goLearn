@@ -25,5 +25,8 @@ func main() {
 	fmt.Println(address1) // ikut berubah
 	fmt.Println(address2) // berubah menjadi Jakarta Selatan
 
-	address2 = &Addres{"Bukittinggi", "Jakarta Selatan", "Indonesia"}
+	// address2 = &Addres{"Bukittinggi", "Jakarta Selatan", "Indonesia"}
+	*address2 = Addres{"Bukittinggi", "Jakarta Selatan", "Indonesia"}
+	fmt.Println(address1)
+	fmt.Println(address2)
 }
