@@ -14,9 +14,9 @@ type Addresss struct {
 
 func main() {
 	// TEST:
-	// var alamat1 *Addresss = &Addresss{} // *Address adalah pointer ke struct // data kosong
+	// var alamat1 *Addresss = &Addresss{} // *Address adalah pointer ke struct // data kosong // bisa menggunakan operator ini
 
-	var alamat1 *Addresss = new(Addresss)
+	var alamat1 *Addresss = new(Addresss) // dan bisa juga menggunakan operator ini // hasil nya sama
 	var alamat2 *Addresss = alamat1
 
 	alamat2.Country = "Indonesia"
