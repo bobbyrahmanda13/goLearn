@@ -23,9 +23,17 @@ func ChangeCountryToIndonesia(alamat *Alamatt) {
 }
 
 func main() {
-	// var alamat *Alamatt = &Alamatt{"Medan", "Sumatera Utara", ""} // ini juga bisa
-	alamat := Alamatt{}
-	ChangeCountryToIndonesia(&alamat)
+	// TEST:
+	// var alamat *Alamatt = &Alamatt{"Medan", "Sumatera Utara", ""}
+	// ini juga bisa tapi pada function (ChangeCountryToIndonesia) ini tidak perlu menggunakan &
+
+	// TEST: 1
+	// alamat := Alamatt{}
+	// ChangeCountryToIndonesia(&alamat)
+
+	// TEST: 2
+	var alamat *Alamatt = &Alamatt{"Medan", "Sumatera Utara", ""}
+	ChangeCountryToIndonesia(alamat)
 
 	fmt.Println(alamat) // tidak berubah
 }
