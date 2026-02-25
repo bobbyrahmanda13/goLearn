@@ -15,7 +15,7 @@ type Alamatt struct {
 	City, Province, Country string
 }
 
-func ChangeCountryToIndonesia(alamat Alamatt) {
+func ChangeCountryToIndonesia(alamat *Alamatt) {
 	alamat.Country = "Indonesia"
 
 	// TEST:
@@ -23,7 +23,7 @@ func ChangeCountryToIndonesia(alamat Alamatt) {
 }
 
 func main() {
-	alamat := Alamatt{}
+	var alamat *Alamatt = &Alamatt{"Medan", "Sumatera Utara", ""}
 	ChangeCountryToIndonesia(alamat)
 
 	fmt.Println(alamat) // tidak berubah
