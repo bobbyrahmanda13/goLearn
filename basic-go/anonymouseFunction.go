@@ -4,6 +4,7 @@
 - Namun kadang ada kalanya lebih mudah membuat function secara lansung di variable atau parameter tanpa harus membuat function terlebih dahulu
 - Hal tersebut dinamakan Anonymous Function atau function tanpa nama
 */
+
 package main
 
 import "fmt"
