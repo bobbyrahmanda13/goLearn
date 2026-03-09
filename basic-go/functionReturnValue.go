@@ -9,7 +9,6 @@ package main
 import "fmt"
 
 func getHai(nama string) string {
-
 	// return "Hai " + nama
 
 	hello := "Hello " + nama
@@ -25,5 +24,4 @@ func main() {
 	fmt.Println(getHai("Budi"))
 	fmt.Println(getHai("joko"))
 	fmt.Println(getHai("jancok"))
-
 }

@@ -16,12 +16,10 @@ func getGameName() (string, string) {
 }
 
 func getNameSayang() (string, int, string, bool) {
-
 	return "Windy Annisa", 17, "Juni", true
 }
 
 func main() {
-
 	firstName, lastName := getFullName()
 	fmt.Println(firstName, lastName) // butuh semuanya
 
