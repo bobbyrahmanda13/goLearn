@@ -1,8 +1,9 @@
 package main
 
 import (
-	"basic-go/helper"
 	"fmt"
+
+	"basic-go/helper"
 )
 
 func main() {
@@ -11,5 +12,5 @@ func main() {
 
 	fmt.Println(helper.Application)
 	// fmt.Println(helper.version) // tidak bisa di akses (acces modifier)
-	// fmt.Println(helper.sayGoodBye) // tidak bisa di akses (acces modifier)
+	// fmt.Println(hekkkkkkkkajlper.sayGoodBye) // tidak bisa di akses (acces modifier)
 }
