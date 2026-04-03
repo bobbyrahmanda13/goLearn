@@ -31,7 +31,7 @@ func SaveData(id string, data any) error {
 }
 
 func main() {
-	err := SaveData("bobby", nil)
+	err := SaveData("", nil)
 	if err != nil {
 		// if validationErr, ok := err.(*validationError); ok {
 		// 	fmt.Println("validation error :", validationErr.Error())
