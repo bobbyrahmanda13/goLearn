@@ -8,7 +8,6 @@ package main
 import "fmt"
 
 func main() {
-
 	// fmt.Println("hello world")
 	// # Kode Program Break
 	for i := 0; i < 10; i++ {
@@ -28,5 +27,4 @@ func main() {
 		}
 		fmt.Println("Perulangan Ke", i)
 	}
-
 }
